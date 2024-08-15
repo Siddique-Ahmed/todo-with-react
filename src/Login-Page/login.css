@@ -1,0 +1,84 @@
+.addUser {
+  width: 340px;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 15px 20px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.addUser h3 {
+  font-size: 28px;
+  color: darkcyan;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+.addUserForm {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.addUserForm .inputGroup {
+  width: 100%;
+  min-height: 10vh;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+.inputGroup input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 7px 10px;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.inputGroup input:focus {
+  box-shadow: 1px 1px 8px rgba(28, 211, 125, 0.065);
+}
+.inputGroup label {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+.button_box {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button_box button {
+  width: 80%;
+}
+.Login_user {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+.Login_user button {
+  width: 130px;
+}

@@ -1,0 +1,134 @@
+.userTodo{
+  width: 100%;
+  min-height: 100vh;
+}
+.userTodo .navbar {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+  background: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navbar .logo h1{
+  font-size: 29px;
+  font-weight: 700;
+  color: #363333;
+}
+.navbar .user_detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar .user_detail .user_profile{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+  object-fit: cover;
+}
+.navbar .user_detail .user_profile img{
+  width: 100%;
+  border-radius: 50%;
+}
+.navbar .user_detail .logout_user button{
+  width: 90px;
+}
+.userTodo .todo_app{
+  width: 100%;
+  min-height: 80vh;
+  padding: 40px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.todo_app .todo_box{
+  width: 340px;
+  min-height: 12vh;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 7px 15px;
+}
+.todo_box .input_box{
+  width: 100%;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input_box input{
+  width: 100%;
+  min-height: 8vh;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  font-size: 18px;
+}
+.input_box button{
+  width: 80px;
+  min-height: 8vh;
+}
+.todo_box .todo_item {
+  width: 100%;
+  min-height: 48vh;
+  padding: 20px 0;
+  display: none;
+}
+
+.todo_box .todo_item div {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 10px;
+}
+
+.todo_item div p {
+  width: 80%;
+  margin: 0;
+  min-height: 40px;
+  line-height: 40px; 
+  white-space: pre-wrap;
+  outline: none;
+}
+
+.todo_item div span {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div span i {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+div span i.fa-edit {
+  color: green;
+}
+
+div span i.fa-trash {
+  color: red;
+}
