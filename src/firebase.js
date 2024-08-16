@@ -5,6 +5,7 @@ import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signOut,
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import {
   getStorage,
@@ -12,7 +13,15 @@ import {
   uploadBytes,
   getDownloadURL,
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
-import {getFirestore,collection,addDoc} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  getDocs,
+  orderBy,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "AIzaSyDLsPKe5n5XmGBfIBbtxAcOiSBv3bGkL6w",
   authDomain: "todo-with-react-2a200.firebaseapp.com",
@@ -20,7 +29,7 @@ const firebaseConfig = {
   storageBucket: "todo-with-react-2a200.appspot.com",
   messagingSenderId: "378810723586",
   appId: "1:378810723586:web:6ddcd0d9508c916a30a61b",
-  measurementId: "G-MV734D50ZX"
+  measurementId: "G-MV734D50ZX",
 };
 
 // Initialize Firebase
@@ -42,4 +51,9 @@ export {
   addDoc,
   collection,
   signInWithEmailAndPassword,
+  signOut,
+  getDocs,
+  orderBy,
+  query,
+  where
 };
