@@ -1,5 +1,5 @@
 import React from "react";
-import "./Signup.css";
+import "./signup.css";
 import { Link, useNavigate } from "react-router-dom";
 import {
   auth,
@@ -36,7 +36,7 @@ const Signup = () => {
         auth,
         user_email,
         user_password
-      ) ;
+      );
       const user = userCredential.user;
       const userSignupInfo = {
         user_name,
@@ -62,11 +62,9 @@ const Signup = () => {
         const docRef = await addDoc(userCollection, userSignupInfo);
         console.log("Document written with ID: ", docRef.id);
         navigate("/Login-Page");
-
       } catch (storageError) {
         Swal.fire("Error uploading file: " + storageError.message);
       }
-
     } catch (authError) {
       Swal.fire("Error signing up: " + authError.message);
     }
